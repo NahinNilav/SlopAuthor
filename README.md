@@ -53,23 +53,6 @@ pip install -r requirements.txt
 cp env.example .env
 # Edit .env and add your GEMINI_API_KEY
 ```
-
-### Usage
-
-```bash
-# Simple prompt
-python main.py "Create a collection of 5 sci-fi short stories about AI"
-
-# With template
-python main.py --template novel "Write a thriller novel"
-
-# List available templates
-python main.py --list-templates
-
-# Interactive mode
-python main.py
-```
-
 ## CLI Reference
 
 ### Basic Commands
