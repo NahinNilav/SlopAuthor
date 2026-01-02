@@ -1,0 +1,56 @@
+{
+  "name": "Novel",
+  "description": "Standard novel structure with chapters, character bible, and outline",
+  "category": "fiction",
+  "default_structure": {
+    "chapters": 10,
+    "include_outline": true,
+    "include_character_bible": true
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "template": "readme.md",
+      "description": "Project overview and table of contents"
+    },
+    {
+      "name": "outline.md",
+      "template": "outline.md",
+      "description": "Story outline and plot structure"
+    },
+    {
+      "name": "characters.md",
+      "template": "characters.md",
+      "description": "Character bible and descriptions"
+    },
+    {
+      "name": "worldbuilding.md",
+      "template": "worldbuilding.md",
+      "description": "World, setting, and lore details"
+    }
+  ],
+  "chapter_template": "chapter.md",
+  "variables": {
+    "title": {
+      "type": "string",
+      "description": "The title of your novel",
+      "default": "Untitled Novel"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name",
+      "default": "Anonymous"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Novel genre",
+      "default": "Fiction"
+    },
+    "target_word_count": {
+      "type": "integer",
+      "description": "Target word count for the novel",
+      "default": 80000
+    }
+  },
+  "writing_guidelines": "Each chapter should be 3,000-5,000 words. Focus on character development, dialogue, and vivid descriptions. Maintain consistent pacing throughout."
+}

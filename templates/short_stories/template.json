@@ -1,0 +1,46 @@
+{
+  "name": "Short Story Collection",
+  "description": "A collection of themed short stories with index and author notes",
+  "category": "fiction",
+  "default_structure": {
+    "story_count": 5,
+    "include_index": true,
+    "include_author_notes": true
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "template": "readme.md",
+      "description": "Collection overview and table of contents"
+    },
+    {
+      "name": "author_notes.md",
+      "template": "author_notes.md",
+      "description": "Author commentary and behind-the-scenes"
+    }
+  ],
+  "story_template": "story.md",
+  "variables": {
+    "collection_title": {
+      "type": "string",
+      "description": "Title of the collection",
+      "default": "Untitled Collection"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name",
+      "default": "Anonymous"
+    },
+    "theme": {
+      "type": "string",
+      "description": "Unifying theme of the collection",
+      "default": "Various"
+    },
+    "story_count": {
+      "type": "integer",
+      "description": "Number of stories in the collection",
+      "default": 5
+    }
+  },
+  "writing_guidelines": "Each short story should be 3,000-10,000 words. Focus on a single strong concept per story. Ensure each story can stand alone while contributing to the collection's theme."
+}

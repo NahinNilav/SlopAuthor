@@ -1,0 +1,61 @@
+{
+  "name": "Screenplay",
+  "description": "Film or TV screenplay with proper formatting, scene structure, and character breakdowns",
+  "category": "script",
+  "default_structure": {
+    "acts": 3,
+    "include_treatment": true,
+    "include_character_breakdown": true
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "template": "readme.md",
+      "description": "Project overview"
+    },
+    {
+      "name": "treatment.md",
+      "template": "treatment.md",
+      "description": "Story treatment/synopsis"
+    },
+    {
+      "name": "characters.md",
+      "template": "characters.md",
+      "description": "Character breakdown"
+    },
+    {
+      "name": "beat_sheet.md",
+      "template": "beat_sheet.md",
+      "description": "Scene-by-scene beat sheet"
+    }
+  ],
+  "scene_template": "scene.md",
+  "variables": {
+    "title": {
+      "type": "string",
+      "description": "Screenplay title",
+      "default": "Untitled Screenplay"
+    },
+    "author": {
+      "type": "string",
+      "description": "Screenwriter name",
+      "default": "Anonymous"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Genre (Drama, Comedy, Thriller, etc.)",
+      "default": "Drama"
+    },
+    "format": {
+      "type": "string",
+      "description": "Feature Film or TV Pilot",
+      "default": "Feature Film"
+    },
+    "logline": {
+      "type": "string",
+      "description": "One-sentence logline",
+      "default": ""
+    }
+  },
+  "writing_guidelines": "Follow standard screenplay format. Feature films are typically 90-120 pages (1 page ≈ 1 minute of screen time). Focus on visual storytelling, sharp dialogue, and clear action lines. Show, don't tell."
+}

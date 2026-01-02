@@ -1,0 +1,56 @@
+{
+  "name": "Technical Book",
+  "description": "Non-fiction technical or educational book with chapters, code examples, and exercises",
+  "category": "non-fiction",
+  "default_structure": {
+    "chapters": 10,
+    "include_exercises": true,
+    "include_glossary": true
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "template": "readme.md",
+      "description": "Book overview and how to use this book"
+    },
+    {
+      "name": "preface.md",
+      "template": "preface.md",
+      "description": "Author's preface and acknowledgments"
+    },
+    {
+      "name": "glossary.md",
+      "template": "glossary.md",
+      "description": "Glossary of terms"
+    },
+    {
+      "name": "resources.md",
+      "template": "resources.md",
+      "description": "Additional resources and further reading"
+    }
+  ],
+  "chapter_template": "chapter.md",
+  "variables": {
+    "title": {
+      "type": "string",
+      "description": "Book title",
+      "default": "Untitled Technical Book"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name",
+      "default": "Anonymous"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Main subject/technology covered",
+      "default": "Technology"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Who is this book for",
+      "default": "Beginners to intermediate learners"
+    }
+  },
+  "writing_guidelines": "Each chapter should be 2,500-4,000 words. Include practical examples, code snippets where relevant, and exercises at the end of each chapter. Build concepts progressively from simple to complex."
+}
