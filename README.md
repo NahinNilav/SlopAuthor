@@ -1,5 +1,8 @@
 # SlopAuthor
 
+
+## Note: ** Experiment in progress. Haven't decided where I want to take this project eventually. Stable but may introduce breaking changes and altered features with future commits. Use at your own discretion **
+
 An autonomous AI writing agent powered by Google's Gemini 3 Flash — built to explore the limits of 1M token context windows and flash thinking capabilities.
 
 ## The Experiment
