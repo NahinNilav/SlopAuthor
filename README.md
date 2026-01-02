@@ -2,10 +2,6 @@
 
 An autonomous AI writing agent powered by Google's Gemini 3 Flash — built to explore the limits of 1M token context windows and flash thinking capabilities.
 
-![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-orange.svg)
-
 ## The Experiment
 
 This project started as an experiment: **What happens when you give an AI agent autonomy, a massive context window, and let it write complete novels?**
@@ -193,39 +189,13 @@ output/<project_name>/
 | `technical_book` | Educational content with exercises and glossary |
 | `screenplay` | Film/TV format with beat sheets and treatments |
 
-## Project Structure
-
-```
-slopauthor/
-├── main.py              # Entry point
-├── src/
-│   ├── writer.py        # Main agent loop
-│   ├── core/            # Utilities and config
-│   └── tools/           # Agent tools (write, compress, templates)
-├── templates/           # Project templates
-├── output/              # Generated content
-└── requirements.txt
-```
-
 ## How It Works
 
 1. **Agentic Loop**: The agent runs up to 300 iterations, each time reasoning about what to do next
 2. **Tool Use**: It can create projects, write files, and manage context
 3. **Context Management**: Auto-compresses at 900K tokens to stay within limits
 4. **Recovery**: Interrupted? Resume from any saved checkpoint
-
-## Tech Stack
-
-- **Model**: Gemini 3 Flash (1M context, flash thinking)
-- **Framework**: Google GenAI SDK
-- **Architecture**: Tool-calling agent with autonomous execution
-
-## License
-
-MIT — Use it, modify it, ship it.
-
 ---
 
 *Built with curiosity and $300 in API credits.*
-
 
